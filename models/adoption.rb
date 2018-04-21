@@ -23,4 +23,15 @@
         @id = adoption['id'].to_i
       end
 
+      def self.all()
+        sql = 'SELECT * FROM adoption'
+        result = SqlRunner.run(sql)
+        return map_adoption(result)
+      end
+
+      def self.delete_all
+      sql = "DELETE FROM adoption"
+      SqlRunner.run(sql)
+    end
+
     end #end of class

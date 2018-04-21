@@ -1,11 +1,14 @@
 
 
-    require_relative('models/animals')
-    require_relative('models/owners')
-    require_relative('models/adoption')
+    require_relative('../models/animals')
+    require_relative('../models/owners')
+    require_relative('../models/adoption')
 
     require('pry-byebug')
 
+    Owner.delete_all()
+    Animal.delete_all()
+    Adoption.delete_all()
 
       owner1 = Owner.new({
         'first_name' => 'Francis',

@@ -1,8 +1,8 @@
 
 
-    DROP TABLE adoption;
-    DROP TABLE owners;
-    DROP TABLE animals;
+    DROP TABLE IF EXISTS adoption;
+    DROP TABLE IF EXISTS owners;
+    DROP TABLE IF EXISTS animals;
 
 
     CREATE TABLE owners(
