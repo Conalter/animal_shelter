@@ -32,14 +32,30 @@
       end
 
       def self.all()
-        sql = 'SELECT * FROM owners'
+        sql = 'SELECT * FROM owners;'
         result = SqlRunner.run(sql)
         return map_owners(result)
       end
 
-      def self.delete_all
-      sql = "DELETE FROM owners"
-      SqlRunner.run(sql)
-    end
+      def self.delete_all()
+        sql = 'DELETE FROM owners;'
+        SqlRunner.run(sql)
+      end
+
+      def self.map_owners(owner_data)
+        return owner_data.map {|owner_hash| Owner.new(owner_hash)}
+      end
+
+      def self.delete_all()
+        sql = 'DELETE FROM owners;'
+        SqlRunner.run(sql)
+      end
+
+      def self.find_by_id(id)
+        sql = 'SELECT * FROM owners WHERE id = $1;'
+        value = [id]
+        result = SqlRunner.run(sql, value)
+        Owner.new(result[0])
+      end
 
     end #end of class
