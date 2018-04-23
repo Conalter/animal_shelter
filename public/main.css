@@ -2,13 +2,13 @@
 
 
     body {
-      background: red url('/public/images/IMG_0001 copy.jpg');
+      background: url('/images/background.jpg');
       background-size: 100%;
       background-repeat: no-repeat;
-      color: papayawhip;
+      color: white;
       font-family: 'Merriweather', serif;
-      padding: 0px;
-      margin: 0px;
+      padding: 20px;
+      margin: 20px;
     }
 
     #display-types {
@@ -20,6 +20,6 @@
       display: inline-block;
     }
 
-    .background {
-      background: red;
+    a {
+        color: white;
     }

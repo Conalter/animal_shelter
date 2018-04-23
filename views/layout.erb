@@ -5,13 +5,25 @@
 <head>
   <title>Animal Shelter</title>
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Special+Elite" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="/main.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Welcome to the Animal Shelter webpage.</title>
 </head>
-<nav>Home</nav> <nav>See Animals</nav> 
+<nav>
+  <ul>
+    <li>
+      <a href="/animals">See Animals</a>
+    </li>
+    <li>
+      <a href="/owners">See Owners</a>
+    </li>
+    <li>
+      <a href="/"> Homepage</a>
+    </li>
+  </ul>
+<nav>
 <body>
   <%= yield %>
 </body>
