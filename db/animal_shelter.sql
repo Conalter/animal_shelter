@@ -1,6 +1,6 @@
 
 
-    DROP TABLE IF EXISTS adoption;
+    DROP TABLE IF EXISTS adoptions;
     DROP TABLE IF EXISTS owners;
     DROP TABLE IF EXISTS animals;
 
@@ -12,7 +12,7 @@
         address VARCHAR(255),
         phone INT,
         email VARCHAR(255),
-        adoptied_animals VARCHAR(255)
+        adopted_animals VARCHAR(255)
       );
 
     CREATE TABLE animals(
@@ -20,10 +20,10 @@
         name VARCHAR(255),
         breed VARCHAR(255),
         adopted BOOLEAN,
-        admisson_date INT
+        admission_date INT
     );
 
-    CREATE TABLE adoption(
+    CREATE TABLE adoptions(
       id SERIAL4 PRIMARY KEY,
       owner_id INT4 REFERENCES owners(id) ON DELETE CASCADE,
       animal_id INT4 REFERENCES animals(id) ON DELETE CASCADE

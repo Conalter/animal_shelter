@@ -6,7 +6,7 @@
 
     get '/owners' do
       @owners = Owner.all()
-      erb ( :"owners/index" )
+      erb (:"owners/index")
     end
 
     get '/owners/:id' do

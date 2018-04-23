@@ -30,7 +30,7 @@
         end
 
         def test_phone()
-          assert_equal('0104 783025', @owner1.phone)
+          assert_equal('0104783025', @owner1.phone)
         end
 
         def test_email()

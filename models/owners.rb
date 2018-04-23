@@ -13,21 +13,21 @@
         @last_name = options['last_name']
         @address = options['address']
         @email = options['email']
-        @phone = options['phone']
-        @adopted_animals = options ['adopted_animals']
+        @phone = options['phone'].to_i
+        @adopted_animals = options['adopted_animals']
       end
 
       def save()
-        sql = 'INSERT INTO owner (
+        sql = 'INSERT INTO owners (
         first_name,
         last_name,
         address,
-        email,
         phone,
+        email,
         adopted_animals)
         VALUES ($1, $2, $3, $4, $5, $6) RETURNING id;'
-        values = [@fist_name, @last_name, @address, @email, @phone, @adopted_animals]
-        result = SqlRunner.run(sql)
+        values = [@first_name, @last_name, @address, @phone, @email, @adopted_animals]
+        result = SqlRunner.run(sql, values)
         @id = result[0][id].to_i
       end
 
