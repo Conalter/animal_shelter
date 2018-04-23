@@ -45,7 +45,7 @@
         'name' => 'Spot',
         'breed' => 'dachshund',
         'adoptable' => 'true',
-        'admisson_date' => '04/09/2017'
+        'admission_date' => '04/09/2017'
         })
       animal1.save()
 
@@ -53,7 +53,7 @@
         'name' => 'Lucy',
         'breed' => 'labrador retriever',
         'adoptable' => 'true',
-        'admisson_date' => '19/04/2017'
+        'admission_date' => '19/04/2017'
         })
       animal2.save()
 
@@ -61,28 +61,24 @@
         'name' => 'Charlie',
         'breed' => 'spaniel',
         'adoptable' => 'true',
-        'admisson_date' => '02/02/2018'
+        'admission_date' => '02/02/2018'
         })
       animal3.save()
 
-
       adoption1 = Adoption.new({
-        'owner_id' => 'owner.id',
-        'animal_id' => 'animal.id',
+        'owner_id' => owner1.id,
+        'animal_id' => animal1.id
         })
       adoption1.save()
 
       adoption2 = Adoption.new({
-        'owner_id' => 'owner.id',
-        'animal_id' => 'animal.id',
+        'owner_id' => owner2.id,
+        'animal_id' => animal2.id
         })
       adoption2.save()
 
       adoption3 = Adoption.new({
-        'owner_id' => 'owner.id',
-        'animal_id' => 'animal.id',
+        'owner_id' => owner3.id,
+        'animal_id' => animal3.id
         })
       adoption3.save()
-
-    binding.pry
-    nil

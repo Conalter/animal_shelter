@@ -28,7 +28,7 @@
         VALUES ($1, $2, $3, $4, $5, $6) RETURNING id;'
         values = [@first_name, @last_name, @address, @phone, @email, @adopted_animals]
         result = SqlRunner.run(sql, values)
-        @id = result[0][id].to_i
+        @id = result[0]['id'].to_i
       end
 
       def self.all()

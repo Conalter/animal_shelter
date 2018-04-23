@@ -1,0 +1,25 @@
+
+
+
+    body {
+      background: red url('/public/images/IMG_0001 copy.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      color: papayawhip;
+      font-family: 'Merriweather', serif;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    #display-types {
+      font: 22px Helvetica;
+      border: 3px solid grey;
+      padding: 10px;
+      width: 50%;
+      margin-bottom: 40px;
+      display: inline-block;
+    }
+
+    .background {
+      background: red;
+    }

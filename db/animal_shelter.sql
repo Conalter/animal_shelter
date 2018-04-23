@@ -19,8 +19,8 @@
         id SERIAL4 PRIMARY KEY,
         name VARCHAR(255),
         breed VARCHAR(255),
-        adopted BOOLEAN,
-        admission_date INT
+        adoptable BOOLEAN,
+        admission_date VARCHAR(255)
     );
 
     CREATE TABLE adoptions(

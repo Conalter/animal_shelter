@@ -6,7 +6,7 @@
 
     get '/animals' do
       @animals = Animal.all()
-      erb (:"animals/index")
+      erb (:"animals")
     end
 
     get '/animals/:id' do

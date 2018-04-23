@@ -1,0 +1,11 @@
+
+
+<% @owners.each do |owner| %>
+  <p>First Name: <%= owner.first_name %></p>
+  <p>Last Name: <%= owner.last_name %></p>
+  <p>Address: <%= owner.address %></p>
+  <p>Email: <%= owner.email %></p>
+  <p>Phone: <%= owner.phone %></p>
+  <P>Adopted Animals: <%= owner.adopted_animals %></P>
+  <hr/>
+<% end %>

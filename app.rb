@@ -9,3 +9,13 @@
     get '/' do
       erb( :index )
     end
+
+    get "/animals" do
+      @animals = Animal.all()
+      erb(:animal)
+    end
+
+    get "/owners" do
+      @owners = Owner.all()
+      erb(:owner)
+    end
