@@ -25,7 +25,7 @@
         'last_name' => 'Greenwood',
         'address' => '34, Tantallan Rd, Shawlands, Glasgow, G20 0DD',
         'phone' => '0104520387',
-        'email' => 'ricG090@gmail.com',
+        'email' => 'ricG090@gmail.co.uk',
         'adopted_animals' => 'Lucy'
         })
       owner2.save()
@@ -36,14 +36,24 @@
         'address' => '45, High Road Rd, Partick, Glasgow, G30JR',
         'phone' => '0104387874',
         'email' => 'DD1975@gmail.com',
-        'adopted_animals' => 'Charlie'
+        'adopted_animals' => 'Pip'
         })
       owner3.save()
+
+      owner4 = Owner.new({
+        'first_name' => 'Sheela',
+        'last_name' => 'Henderson',
+        'address' => '145, Clapton Rd, Kilmarnock, Glasgow, G90 I76',
+        'phone' => '0934562234',
+        'email' => 'SheelaH@yahoo.co.uk',
+        'adopted_animals' => 'Charlie'
+        })
+      owner4.save()
 
 
       animal1 = Animal.new({
         'name' => 'Spot',
-        'breed' => 'dachshund',
+        'breed' => 'Dachshund',
         'adoptable' => 'true',
         'admission_date' => '04/09/2017'
         })
@@ -51,7 +61,7 @@
 
       animal2 = Animal.new({
         'name' => 'Lucy',
-        'breed' => 'labrador retriever',
+        'breed' => 'Labrador Retriever',
         'adoptable' => 'true',
         'admission_date' => '19/04/2017'
         })
@@ -59,11 +69,35 @@
 
       animal3 = Animal.new({
         'name' => 'Charlie',
-        'breed' => 'spaniel',
+        'breed' => 'Spaniel',
         'adoptable' => 'true',
         'admission_date' => '02/02/2018'
         })
       animal3.save()
+
+      animal4 = Animal.new({
+        'name' => 'Noodle',
+        'breed' => 'Mongrel',
+        'adoptable' => 'false',
+        'admission_date' => '02/04/2018'
+        })
+      animal4.save()
+
+      animal5 = Animal.new({
+        'name' => 'Angel',
+        'breed' => 'German Shepherd',
+        'adoptable' => 'false',
+        'admission_date' => '07/09/2017'
+        })
+      animal5.save()
+
+      animal6 = Animal.new({
+        'name' => 'Pip',
+        'breed' => 'Himalayan Sheepdog',
+        'adoptable' => 'true',
+        'admission_date' => '20/10/2017'
+        })
+      animal6.save()
 
       adoption1 = Adoption.new({
         'owner_id' => owner1.id,

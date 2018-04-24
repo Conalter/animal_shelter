@@ -5,21 +5,55 @@
       background: url('/images/background.jpg');
       background-size: 100%;
       background-repeat: no-repeat;
-      color: white;
+      color: black;
       font-family: 'Merriweather', serif;
-      padding: 20px;
-      margin: 20px;
+      padding: 25px;
+      margin: 25px;
     }
 
-    #display-types {
-      font: 22px Helvetica;
-      border: 3px solid grey;
-      padding: 10px;
-      width: 50%;
-      margin-bottom: 40px;
+    display-types {
+      font: 24px Helvetica;
+      border: none;
+      padding: 12px;
+      width: 60%;
+      margin-bottom: 50px;
       display: inline-block;
     }
 
-    a {
-        color: white;
+    .nav {
+      float: right;
     }
+
+    li{
+
+
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 2;
+      padding: 2;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    a {
+      color: white;
+    }
+
+    center {
+      margin: auto;
+      width: 50%;
+      border: 3px solid green;
+      padding: 10px;
+    }
+
+    .grid{
+      border: none;
+    }
+
+    @media all and (min-width: 960px){
+    .grid {
+      flex-direction: row;
+    }
+  }

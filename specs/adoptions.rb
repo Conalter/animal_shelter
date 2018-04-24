@@ -14,16 +14,4 @@
             })
         end
 
-        def test_adoption_id
-
-        end
-
-        def test_owner_id
-
-        end
-
-        def test_animal_id
-
-        end 
-
       end #end of class
