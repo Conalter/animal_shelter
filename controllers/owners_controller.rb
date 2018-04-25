@@ -3,9 +3,10 @@
     require('sinatra')
     require('sinatra/contrib/all')
     require_relative('../models/owners.rb')
+    require_relative('../models/adoption.rb')
 
     get '/owners' do
-      @owners = Owner.all()
+      @adoptions = Adoption.all()
       erb (:"owner")
     end
 

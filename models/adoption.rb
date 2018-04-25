@@ -26,7 +26,7 @@
       def self.all()
         sql = 'SELECT * FROM adoptions'
         result = SqlRunner.run(sql)
-        return map_adoption(result)
+        return Adoption.map_adoptions(result)
       end
 
       def owner()
@@ -55,6 +55,10 @@
         WHERE id = $1'
         values = [id]
         SqlRunner.run(sql, values)
+      end
+
+      def self.map_adoptions(data)
+        return data.map {|adoptions| Adoption.new(adoptions)}
       end
 
     end #end of class

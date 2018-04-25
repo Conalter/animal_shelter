@@ -5,7 +5,8 @@
       background: url('/images/background.jpg');
       background-size: 100%;
       background-repeat: no-repeat;
-      color: black;
+      background-color: black;
+      color: white;
       font-family: 'Merriweather', serif;
       padding: 25px;
       margin: 25px;
@@ -13,32 +14,42 @@
 
     display-types {
       font: 24px Helvetica;
-      border: none;
+      border: 20px;
       padding: 12px;
       width: 60%;
-      margin-bottom: 50px;
+      margin-top: 20px;
+      margin-top: 50px;
       display: inline-block;
     }
 
-    .nav {
-      float: right;
-    }
-
-    li{
-
-
-    }
-
     ul {
-      list-style-type: none;
+      position: right;
+      top: 0;
+      width: auto%;
       margin: 2;
       padding: 2;
       overflow: hidden;
-      background-color: #333;
     }
 
+    .nav {
+      float: left;
+      margin-top: 0px;
+    }
+
+    li{
+      display: inline;
+      text-align: center;
+    }
+
+    /* .active {
+    background-color: #4CAF50;
+    } */
+
     a {
-      color: white;
+      color: black;
+      display: block;
+      padding: 4px;
+      background-color: white;
     }
 
     center {
@@ -49,11 +60,25 @@
     }
 
     .grid{
-      border: none;
+      border: 30px;
     }
 
     @media all and (min-width: 960px){
     .grid {
       flex-direction: row;
     }
+  ul {
+      list-style-type: none;
+      margin: 8;
+      padding: 6;
+      overflow: hidden;
+      background-color: #666;
+  }
+
+  li {
+      float: right;
+  }
+
+  li a:hover {
+      background-color: goldenrod;
   }

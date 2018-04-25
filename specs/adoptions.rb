@@ -4,10 +4,10 @@
     require 'minitest/rg'
     require_relative ('../models/adoptions.rb')
 
-      class TestAdoptions < MiniTest::Test
+      class TestAdoption < MiniTest::Test
 
         def setup
-          @adoptions = Adoptions.new({
+          @adoptions = Adoption.new({
             'id' => 'id',
             'owner_id' => 'owner_id'
             'animal_id' => 'animal_id'

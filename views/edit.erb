@@ -1,4 +1,5 @@
 
+<form action="/adoptions/<%=params[:id]%>/edit" method="post">
 
 <% @adoptions.each do |adoption| %>
   <p>First Name: <%= adoption.owner.first_name %></p>
@@ -7,6 +8,15 @@
   <p>Email: <%= adoption.owner.email %></p>
   <p>Phone: <%= adoption.owner.phone %></p>
   <P>Adopted Animals: <%= adoption.animal.name %></P>
+
   <a href="/adoption/edit/<%= adoption.id%>">Edit</a>
+  <label for="animal_id">animal:</label>
+  <select name="animal_id" id="animal_id">
+    <option value=""></option>
+    <% @animal.each do |animal| %>
+    <option value="<%= animal.id %>"><%= animal.name %></option>
+  <% end %>
   <hr/>
 <% end %>
+<input type="submit" value="Adopt">
+</form>

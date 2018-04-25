@@ -58,4 +58,11 @@
         Owner.new(result[0])
       end
 
+      def owner_update()
+        sql = 'UPDATE owner SET (adopted_animals) WHERE adopted_animals = $1;'
+        value =[id]
+        result = SqlRunner.rub(sql, value)
+        Owner.new(result[0])
+      end
+
     end #end of class
