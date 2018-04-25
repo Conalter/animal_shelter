@@ -45,6 +45,13 @@
         return Animal.new(results.first)
       end
 
+      def self.find(id)
+        sql = 'SELECT * FROM adoptions WHERE owner_id = $1'
+        values = [id]
+        adoption_data = SqlRunner.run(sql, values)
+        return adoption_data.map { |adoption_hash| Adoption.new(adoption_hash) }
+      end
+
       def self.delete_all()
         sql = 'DELETE FROM adoptions'
         SqlRunner.run(sql)

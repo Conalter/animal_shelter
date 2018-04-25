@@ -25,8 +25,8 @@
         erb (:edit_adoption)
       end
 
-      get "/adoptions/:id/edit" do
-        @adoption = Adoption.find(params[:id])
+      get "/adoptions/edit/:id" do
+        @adoptions = Adoption.find(params[:id])
         erb(:edit)
       end
 
