@@ -12,6 +12,7 @@
         @breed = options['breed']
         @adoptable = options['adoptable']
         @admission_date = options['admission_date']
+        @image = options['']
       end
 
       def save()
