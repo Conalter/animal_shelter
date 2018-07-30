@@ -68,4 +68,4 @@
         return data.map {|adoptions| Adoption.new(adoptions)}
       end
 
-    end #end of class
+    end 

@@ -65,4 +65,4 @@
         Owner.new(result[0])
       end
 
-    end #end of class
+    end

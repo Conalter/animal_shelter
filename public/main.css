@@ -2,9 +2,9 @@
 
 
     body {
-      background: url('/images/background.jpg');
-      background-size: 100%;
-      background-repeat: no-repeat;
+      background: url('/images/CCAS.png');
+      background-size: 40%;
+      background-repeat: repeat;
       background-color: black;
       color: white;
       font-family: 'Merriweather', serif;

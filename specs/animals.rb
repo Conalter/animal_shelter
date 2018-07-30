@@ -31,4 +31,4 @@
           assert_equal('04/09/2017', @animal.admission_date)
         end
 
-      end #end of class
+      end 

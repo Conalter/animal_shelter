@@ -14,4 +14,4 @@
             })
         end
 
-      end #end of class
+      end 

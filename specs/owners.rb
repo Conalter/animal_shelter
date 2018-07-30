@@ -41,4 +41,4 @@
           assert_equal('spot', @owner1.adopted_animals)
         end
 
-      end #end of class
+      end
