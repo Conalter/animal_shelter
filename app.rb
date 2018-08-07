@@ -7,7 +7,7 @@
     require_relative('controllers/adoptions_controller')
 
     get '/' do
-      erb( :index )
+      erb( :landing_page )
     end
 
     get "/animals" do
@@ -19,5 +19,3 @@
       @owners = Owner.all()
       erb(:owner)
     end
-
-  

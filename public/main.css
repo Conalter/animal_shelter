@@ -2,14 +2,19 @@
 
 
     body {
+      background-position: center;
       background: url('/images/CCAS.png');
-      background-size: 40%;
-      background-repeat: repeat;
       background-color: black;
+      background-size: 75%;
+      background-repeat:no-repeat;
       color: white;
       font-family: 'Merriweather', serif;
       padding: 25px;
       margin: 25px;
+    }
+
+    h1 {
+      align-items: stretch;
     }
 
     display-types {
@@ -22,13 +27,21 @@
       display: inline-block;
     }
 
-    ul {
+    /* ol {
       position: right;
       top: 0;
       width: auto%;
       margin: 2;
       padding: 2;
       overflow: hidden;
+    } */
+
+    ul {
+      list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
     }
 
     .nav {
@@ -40,10 +53,6 @@
       display: inline;
       text-align: center;
     }
-
-    /* .active {
-    background-color: #4CAF50;
-    } */
 
     a {
       color: black;
@@ -67,18 +76,11 @@
     .grid {
       flex-direction: row;
     }
-  ul {
-      list-style-type: none;
-      margin: 8;
-      padding: 6;
-      overflow: hidden;
-      background-color: #666;
-  }
 
   li {
-      float: right;
+      float: left;
   }
 
-  li a:hover {
+  li:hover .nav {
       background-color: goldenrod;
   }
